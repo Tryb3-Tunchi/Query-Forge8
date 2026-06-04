@@ -49,6 +49,7 @@ export function Sidebar() {
         </div>
         {PANELS.map(panel => (
           <button
+          id={panel.id === 'preview' ? 'sidebar-preview' : panel.id === 'results' ? 'sidebar-results' : undefined}
             key={panel.id}
             onClick={() => setActivePanel(panel.id)}
             style={{
