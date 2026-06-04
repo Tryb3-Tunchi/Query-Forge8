@@ -351,3 +351,48 @@ body {
   padding: 4px 8px;
   border-radius: var(--radius-sm);
 }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  /* Hide sidebar on mobile, show as bottom nav */
+  aside {
+    display: none !important;
+  }
+
+  /* Full width main content */
+  .mobile-full {
+    width: 100% !important;
+  }
+
+  /* Mobile bottom nav */
+  .mobile-nav {
+    display: flex !important;
+  }
+
+  /* Stack rule fields vertically */
+  .rule-row {
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+
+  .rule-row select,
+  .rule-row input {
+    min-width: 0 !important;
+    flex: 1 1 120px !important;
+  }
+
+  /* Smaller header on mobile */
+  header {
+    padding: 0 12px !important;
+  }
+
+  header .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .group-zone {
+    padding: 8px !important;
+  }
+}

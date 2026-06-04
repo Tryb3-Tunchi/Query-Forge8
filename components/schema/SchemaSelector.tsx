@@ -7,7 +7,7 @@ export function SchemaSelector() {
   const { schemaId, setSchema } = useQueryStore();
 
   return (
-    <div style={{ display: 'flex', gap: '4px' }}>
+    <div id="schema-selector" style={{ display: 'flex', gap: '4px' }}>
       {SCHEMAS.map(schema => (
         <button
           key={schema.id}
